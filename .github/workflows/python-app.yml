@@ -34,8 +34,7 @@ jobs:
     - name: Testing application
       run: |
         python -m unittest test_app.py
-        mkdir -p test-results
-        mv test-results.xml test-results
+        mv artifact.xml test-results
     - name: Store artifact
       uses: actions/upload-artifact@v2
       with:
