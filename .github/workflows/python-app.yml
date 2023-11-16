@@ -33,7 +33,7 @@ jobs:
     
     - name: Testing application
       run: |
-        python test_app.py
+        pytest test_app.py
     - name: Store artifact
       uses: actions/upload-artifact@v2
       with:
